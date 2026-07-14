@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramamoorty S</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <body>
     <section>
         <header class="headContainer">
             <nav class="navBar">
-                <div class="logo"><h2>PORTFOLIO</h2></div>
-                    <ul class="navLists">
+                <div class="logo"><h2><span class="port">PORT</span>FOLIO</h2></div>
+                    <ul class="navLists" id="navLists">
                         <li class="navLlist">Home</li>
                         <li class="navLlist">About</li>
                         <li class="navLlist">Skills</li>
@@ -19,9 +19,11 @@
                         <li class="navLlist">Achivements</li>
                         <li class="navLlist">Contact</li>
                     </ul>
-                <div class="projectBtn">My Projects</div>
-                <div class="burgerBtn">burger</div>
-                </nav>
+                <div class="headBtns">
+                    <div class="projectBtn">My Projects</div>
+                    <div class="burgerBtn" id="burgerBtn"><i class="fa-solid fa-bars"></i></div>
+                </div>            
+            </nav>
         </header>
 
 
@@ -30,5 +32,7 @@
 
         <footer></footer>
     </section>
+
+    <script src="Script.js"></script>
 </body>
 </html>``
