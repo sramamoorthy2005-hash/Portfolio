@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.headContainer{
+    padding: 35px 50px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+.navLists{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+.navLlist{
+    font-size: 1.1rem;
+}
