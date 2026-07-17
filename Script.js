@@ -3,7 +3,6 @@ const navs = document.getElementById('navLists');
 const wrongBtn=document.getElementById('wrongBtn');
 
 burgerbutton.addEventListener('click',()=>{
-   console.log('click');
     navs.classList.toggle('active');
     if(wrongBtn.classList.contains('fa-bars')){
         wrongBtn.classList.replace('fa-bars','fa-x');
