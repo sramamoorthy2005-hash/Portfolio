@@ -190,7 +190,7 @@
 
     .homeRight{
         width: 100% !important;
-        max-width: 260px !important;
+        max-width: 100px !important;
         height: 300px !important;
     }
     .shortIntro{
