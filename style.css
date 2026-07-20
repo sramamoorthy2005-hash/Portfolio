@@ -192,6 +192,7 @@
         width: 100% !important;
         max-width: 260px !important;
         height: 300px !important;
+        overflow: hidden;
     }
     .shortIntro{
         font-size: 1.1rem;
