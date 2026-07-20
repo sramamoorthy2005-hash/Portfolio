@@ -190,7 +190,7 @@
     .homeRight{
         width: 280px;
         height: 300px;
-        margin-left: 0px;
+        margin-left: 0.1px;
     }
     .shortIntro{
         font-size: 1.1rem;
