@@ -166,7 +166,7 @@
     }
     .homeRight{
         height: 450px;
-        /* margin-left: 8rem; */
+        margin-left: 8rem;
     }
 }
 
@@ -187,6 +187,7 @@
     .hName{
         font-size: 2.6rem;
     }
+    
     .homeRight{
         width: 280px;
         height: 300px;
