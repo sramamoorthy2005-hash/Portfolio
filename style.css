@@ -52,7 +52,7 @@
 
 /* Home page */
 .homeContainer{
-    padding: 4.4rem 75px;
+    padding: 55px 70px;
 }
 .homePage{
     display: flex;
@@ -63,11 +63,13 @@
     width: 800px;
 }
 .homeRight{
-    width: 455px;
+    width: 450px;
+    height: 455px;
 }
 .homeRight img{
     border-radius: 20% 40%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    object-fit: cover;
 }
 .hName{
     font-size: 3.5rem;
@@ -117,6 +119,17 @@
     .headContainer{
         padding: 30px 20px;
     }
+    
+    /* Home  */
+    .homeContainer{
+        padding: 30px 20px;
+    }
+    .homeLeft{
+        padding: 0px 0px;
+    }
+    .homeRight {
+        height: 400px;   
+    }
 }
 
 @media(max-width:768px){
@@ -144,6 +157,17 @@
     .navLists.active{
         display: block;
     }
+    .homePage{
+        flex-direction: column;
+    }
+    .homeLeft{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .homeRight{
+        height: 450px;
+        margin-left: 8rem;
+    }
 }
 
 @media(max-width:320px){
@@ -157,5 +181,24 @@
         width: 65%;
         left: 17px;
         top: 16px;
+    }
+
+    /* home */
+    .hName{
+        font-size: 2.6rem;
+    }
+    .homeRight{
+        width: 280px;
+        height: 300px;
+        margin-left: 0;
+    }
+    .shortIntro{
+        font-size: 1.1rem;
+    }
+    .downSocial{
+        gap: 1rem;
+    }
+    .resume{
+        font-size: 14px;
     }
 }
