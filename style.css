@@ -170,7 +170,7 @@
     }
 }
 
-@media(max-width:320px){
+@media(max-width:480px){
     .headContainer{
         padding: 20px 15px;
     }
@@ -185,7 +185,7 @@
 
     /* home */
     .hName{
-        font-size: 1.6rem;
+        font-size: 2.6rem;
     }
 
     .homeRight{
