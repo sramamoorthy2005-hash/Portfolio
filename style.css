@@ -203,4 +203,17 @@
     .resume{
         font-size: 14px;
     }
+    
+    @media(max-width: 425px){
+        .homeRight{
+            width:310px;
+            height: 360px;
+        }
+    }
+
+    @media(max-width:320px ){
+        .homeRight{
+            width: 260px;
+        }
+    }
 }
