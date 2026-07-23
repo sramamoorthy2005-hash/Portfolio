@@ -16,6 +16,9 @@
 .headContainer{
     padding: 35px 70px;
     background-color: rgb(248, 251, 251);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .navBar{
     display: flex;
@@ -53,6 +56,7 @@
 /* Home page */
 .homeContainer{
     padding: 55px 70px;
+    margin-bottom: 3rem;
 }
 .homePage{
     display: flex;
@@ -107,15 +111,136 @@
     font-size: 2.3rem;
     color: rgb(66, 144, 246);
 }
-/* .socialLink:hover{
-    color: rgb(250, 98, 98);
-} */
 .linkedIn:hover{
     color: rgb(14, 14, 207);
 }
 .gitHub:hover{
     color: black;
 }
+
+
+
+
+/* About page */
+.AboutContainer{
+background-color: #f6f6f6;
+padding-top: 2rem;
+}
+.aboutPage{
+    padding: 35px 70px;
+}
+.aboutFirst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.aboutName{
+    color: rgb(255, 0, 85);
+    font-size: 2.2rem;
+    text-align: center;
+}
+.aboutpa{
+    width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.4;
+   text-indent: 30px;
+}
+.aboutSecond{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   row-gap: 2.5rem;
+   margin-top: 3rem;
+   margin-left: 14%;
+}
+.card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.imgdiv{
+    width: 80px;
+    height: 80px;
+}
+.imgd{
+    width: 129px;
+    height: 80px;
+}
+.imgdiv img{
+    object-fit: cover;
+}
+
+.aboutpara{
+    margin-top: 1rem;
+    width: 80%;
+}
+
+
+
+
+/* Skills page */
+.SkillsContainer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.skillSet{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skillRound{
+    margin-top: 2rem;
+    background-color:rgb(241, 240, 240) ;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: .5s;
+    overflow: hidden;
+}
+.skillRound:hover  {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.skillRound:hover .skillDiv{
+    transform: scale(1.1);
+}
+.skillDiv{
+   width: 3.5rem;
+   height: 3.5rem;
+   transition: .5s;
+}
+.skillName{
+    font-weight: bold;
+}
+.multiple{
+    display: flex;
+    gap: 3rem;
+}
+
+
+
+/* project */
+
+.ProjectContainer{
+    padding-top: 2rem;
+    background-color: #f6f6f6;
+}
+
+
+
+
+
+
+
+
 /* Responsive */
 @media(max-width:1024px){
 
