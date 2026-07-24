@@ -233,6 +233,112 @@ padding-top: 2rem;
     padding-top: 2rem;
     background-color: #f6f6f6;
 }
+.projectGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    justify-items: center;
+    padding: 3rem 10rem;
+}
+.project{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 12px; 
+    border: 3px solid gainsboro;
+    width: 380px;
+    height: auto;
+    padding: 5px;
+}
+/* .project4{
+    grid-column: span 3;
+} */
+.projectImg{
+    width: 380px;
+    height: 250px;
+}
+.projectImg img{
+    object-fit: cover;
+    object-fit: fill;
+    border-radius: 12px;
+    border: 3px solid gainsboro;
+}
+.projectNameLink{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1.5rem;
+    align-items: center;
+}
+.projecticonName{
+    font-weight: bold;
+}
+.gitIcon ,.gitIconb{
+    font-size: 2.5rem;
+    transition: .5s;
+}
+.gitIcon:hover{
+    transform: scale(1.1);
+}
+.projectContent{
+    margin: 2rem 1.5rem;
+}
+.projectContentp ,.projectContentpb{
+    margin-bottom: 1rem;
+}
+.projectLan{
+    margin: 0.8rem 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+.lan ,.lanb{
+    border: 1px solid;
+    padding: 5px 15px;
+    border-radius: 22px;
+    font-size: small;
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+    background-color: rgb(232, 232, 232);
+}
+.lanbottom{
+    margin: 0.1rem 1.5rem;
+    display: flex;
+    gap:1rem;
+}
+.projectBottom{
+    grid-column: span 3;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 12px; 
+    border: 3px solid gainsboro;
+    padding: 5px;
+    height: 280px;
+}
+.projectImgb{
+    width: 550px;
+    height: 280px;
+}
+.projectImgb img{
+    object-fit: cover;
+    object-fit: fill;
+    border-radius: 12px;
+    border: 3px solid gainsboro;
+}
+.projectbR{
+    padding: 20px;
+    margin-left: 1rem;
+}
+.projectNameLinkb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gitIconb:hover{
+    transform: scale(1.1);
+}
+.projectLanb{
+    display: flex;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
 
 
 
