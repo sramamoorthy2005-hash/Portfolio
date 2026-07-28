@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramamoorthy S</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
@@ -13,15 +14,15 @@
             <nav class="navBar">
                 <div class="logo"><h2><span class="port">PORT</span>FOLIO</h2></div>
                     <ul class="navLists" id="navLists">
-                        <li class="navLlist">Home</li>
-                        <li class="navLlist">About</li>
-                        <li class="navLlist">Skills</li>
-                        <li class="navLlist">Projects</li>
-                        <li class="navLlist">Achivements</li>
-                        <li class="navLlist">Contact</li>
+                        <li class="navList" ><a href="#home">Home</a></li>
+                        <li class="navList" ><a href="#about" >About</a></li>
+                        <li class="navList" ><a href="#skill">Skills</a></li>
+                        <li class="navList" ><a href="#project">Projects</a></li>
+                        <li class="navList" ><a href="#achivement">Achivements</a></li>
+                        <li class="navList" ><a href="#contact">Contact</a></li>
                     </ul>
                 <div class="headBtns">
-                    <div class="projectBtn">My Works</div>
+                    <a href="#project" ><div class="projectBtn">My Works</div></a>
                     <div class="burgerBtn" id="burgerBtn"><i class="fa-solid fa-bars" id="wrongBtn"></i></div>
                 </div>            
             </nav>
@@ -30,7 +31,7 @@
 
         <main>
             <!-- Home page -->
-            <div class="homeContainer">
+            <div class="homeContainer" id="home">
                 <div class="homePage">
                     <div class="homeLeft">
                         <h1 class="hName">HI I'M <span class="myName">Ramamoorthy</span></h1>
@@ -51,7 +52,7 @@
             </div>
 
             <!-- About page -->
-            <div class="AboutContainer">
+            <div class="AboutContainer" id="about">
                 <div class="aboutPage">
                     <div class="aboutFirst">
                         <h1 class="aboutName">About Me</h1>
@@ -59,50 +60,47 @@
                     </div>
                     <div class="aboutSecond">
                         <div class="card">
-                            <div class="imgd">
-                                <img src="./img/web_converted.png" width="100%" height="100%" alt="">
+                            <div class="imgdiv">
+                                <img src="./img/web-design.png" width="100%" height="100%" alt="">
                             </div>
-                            <div>
-                                <h3>Frontend developmentt</h3>
+                            <div class="aboutcardContet">
+                                <h3>Frontend development</h3>
                                 <p class="aboutpara">Frontend development is about creating responsive, interactive, and user-friendly web interface</p>
                             </div>
                         </div>
                         <div class="card">
                             <div class="imgdiv">
-                                <img src="./img/program.png" width="100%" height="100%"  alt="">
+                                <img src="./img/coding.png" width="100%" height="100%"  alt="">
                             </div>
-                            <div>
+                            <div class="aboutcardContet">
                                 <h3>Key Skills</h3>
                                 <p class="aboutpara">Java, HTML5, CSS3, JavaScript, MySQL</p>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="imgd">
-                                <img src="./img/e_learning.png" width="100%" height="100%"  alt="">
+                            <div class="imgdiv">
+                                <img src="./img/online-learning.png" width="100%" height="100%"  alt="">
                             </div>
-                            <div>
+                            <div class="aboutcardContet">
                                 <h3>Continuous Learning</h3>
                                 <p class="aboutpara">Always eager to learn and adapt to new technologies to stay ahead in the field of software development.</p>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="imgd">
-                                <img src="./img/fullstackd.png" width="100%" height="100%"  alt="">
+                            <div class="imgdiv">
+                                <img src="./img/web-developer.png" width="100%" height="100%"  alt="">
                             </div>
-                            <div >
+                            <div class="aboutcardContet" >
                                 <h3>Full Stack Development</h3>
                                 <p class="aboutpara">Proficient in Experess&Node,MongoDb and ReactJS, creating scalable and efficient responsive web applications. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="aboutSecond">
-                        
-                    </div>
                 </div>
             </div>
 
             <!-- Skills  -->
-             <div class="SkillsContainer">
+             <!-- <div class="SkillsContainer" id="skill">
                 <div class="skillPage">
                     <h1 class="aboutName">Skills</h1>
                     <div>
@@ -166,11 +164,11 @@
                         </div>
                     </div>
                 </div>
-             </div>
+             </div> -->
 
 
             <!--Project  -->
-             <div class="ProjectContainer">
+             <!-- <div class="ProjectContainer" id="project">
                 <div class="projectPage">
                     <h1 class="aboutName">Projects</h1>
                     <div class="projectGrid">
@@ -282,58 +280,82 @@
                             <div class="projectImgb"><img src="./img/web2.png" width="100%" height="100%" alt=""></div>
                             <div class="projectbR">
                                 <div class="projectNameLinkb">
-                                    <h2 class="projecticonNameb">E-Kart</h2>
+                                    <h2 class="projecticonNameb">Eliott (Modern Developer Portfolio with Dark Mode)</h2>
                                     <span class="gitIconb"><i class="fa-brands fa-github"></i></span>
                                 </div>
                                 <div class="projectContentb">
                                     <p >
-                                        <li class="projectContentpb">Developed a full-stack e-commerce platform using the MERN stack, featuring secure JWT authentication, 
-                                            dynamic product browsing, and persistent cart management.
+                                        <li class="projectContentpb">Built a fully responsive developer/designer portfolio page using Bootstrap 5, HTML5, and CSS3
                                         </li>  
                                     </p>
                                     <p>
                                         <li class="projectContentpb">
-                                            Multi-step checkout workflow with Cash on Delivery (COD) integration and automated real-time inventory 
-                                            updates in MongoDB. 
+                                            Implemented an interactive Dark / Light Mode theme toggle using Vanilla JavaScript DOM manipulation. 
                                         </li>
                                     </p>
                                     <p>
                                         <li>
-                                            Designed a responsive user interface and implemented RESTful APIs to ensure high-performance data 
-                                            communication between frontend and backend services.
+                                            Added smooth scroll active-link highlighting and a dynamic 'Back to Top' button for enhanced UX.
                                         </li>
                                     </p>
                                 </div> 
                                 <div class="projectLanb">
-                                    <div class="lanb">MongoDB</div>
-                                    <div class="lanb">Express(.js)</div>
-                                    <div class="lanb">React(.js)</div>
-                                    <div class="lanb">Node(.js)</div>
+                                    <div class="lanb">HTML5</div>
+                                    <div class="lanb">CSS3</div>
+                                    <div class="lanb">Bootstrap 5</div>
+                                    <div class="lanb">JavaScript (ES6+)</div>
                                 </div>  
                             </div>                   
                         </div>
                     </div>
                 </div>
-             </div>
+             </div> -->
 
 
              <!-- ContactPage -->
-              <div class="ContactContainer">
-                <div class="contactPage">
-                    <div class="contactDetails">
-                        <h4></h4>
-                        <div class="contactinfo"></div>
-                        <div class="contactinfo"></div>
-                        <div class="contactinfo"></div>
-                        <div class="contactLink"></div>
+              <!-- <div class="ContactContainer" id="contact">
+                <div class="contacthead">
+                    <h1 class="aboutName">Contact</h1>
+                    <div class="contactPage"> 
+                        <div class="contactDetails">
+                            <h1>Contact Information</h1>
+                            <div class="contactinfo">
+                                <div class="contactIcon"><i class="fa-solid fa-location-dot"></i></div>
+                                <p>E.Meenachipuram,Tenkasi,Tamilnadu</p>
+                            </div>
+                            <div class="contactinfo">
+                                <div class="contactIcon"><i class="fa-solid fa-phone"></i></div>
+                                <p>6374785912</p>
+                            </div>
+                            <div class="contactinfo">
+                                <div ><i class="fa-solid fa-envelope"></i></div>
+                                <p>sramamoorthy2005@gmail.com</p>
+                            </div>
+                            <div class="contactLink">
+                                <div ><i class="fa-brands fa-whatsapp  whatsapp"></i></div>
+                                <div class="gitHub"><i class="fa-brands fa-github"></i></div>
+                                <div class="linkedIn"><i class="fa-brands fa-linkedin"></i></div>
+                            </div>
+                        </div>
+                        <div class="contactForm">
+                            <input type="text" placeholder="Enter Your Name">
+                            <input type="email" placeholder="Enter Your Email">
+                            <textarea name="" id="" placeholder="Enter Your thougts" rows="5"></textarea>
+                            <button type="button" class="sendMessage">Send Message</button>
+                        </div>
                     </div>
-                    <div class="contactForm"></div>
                 </div>
-              </div>
+              </div> -->
+
         </main>
 
 
-        <footer></footer>
+        <!-- <footer class="Footer">
+            <div class="FooterContainer">
+                 <p> © Copyright 2026 Ramamoorthy | All Rights Reserved</p>
+            </div>
+        </footer> -->
+
     </section>
 
     <script src="Script.js"></script>
