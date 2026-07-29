@@ -144,7 +144,11 @@
         margin-top: 0.6rem;
     }
 }
-
+    @media(max-width:400px){
+        .card{
+            width: 325px;
+        }
+    }
 
     @media(max-width:376px){
         .card{
