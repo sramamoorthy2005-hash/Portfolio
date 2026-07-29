@@ -28,6 +28,13 @@
     .card{
         width: 400px;
     }
+
+
+    /* contact */
+
+    .contactPage{
+        gap: 3rem;
+    }
 }
 
 @media(max-width:768px){
@@ -86,6 +93,21 @@
         width: 100%;
     }
 
+
+
+    /* contact */
+
+    .contactPage{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactDetails{
+        margin-top: 0;
+        width: 70%;
+    }
+    .contactForm{
+        width: 70%;
+    }
 }
 
 @media(max-width:426px){
@@ -143,6 +165,11 @@
         font-size: 0.9rem;
         margin-top: 0.6rem;
     }
+    .contactForm{
+        
+        padding: 2rem 2rem;
+    }
+
 }
     @media(max-width:400px){
         .card{
@@ -157,6 +184,8 @@
         .aboutpara{
         font-size: 0.8rem;
     }
+
+    
     }
 
 
@@ -171,5 +200,11 @@
         .card{
             width: 280px;
             padding: 25px 5px;
+        }
+        .contactDetails h1{
+            font-size: 1.4rem;
+        }
+        .contactinfo p{
+            font-size: 0.8rem;
         }
     }
