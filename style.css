@@ -220,48 +220,51 @@ padding-top: 2rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
-.skillSet{
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.skillSet h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 .skillRound{
-    margin-top: 2rem;
-    background-color:rgb(241, 240, 240) ;
-    height: 7rem;
-    width: 7rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    transition: .5s;
-    overflow: hidden;
+    gap: 20px;
 }
-.skillRound:hover  {
+
+.skillDiv:hover{
     transform: translateY(-5px);
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-.skillRound:hover .skillDiv{
+.skillDiv:hover img{
     transform: scale(1.1);
 }
 .skillDiv{
-   width: 3.5rem;
-   height: 3.5rem;
-   transition: .5s;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all 0.3s ease-in-out;
+    
+}
+.skillDiv img{
+    width: 50px;
+    height: 50px;
 }
 .skillName{
+    margin-top: 5px;
     font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+    word-break: break-word;  
 }
-.multiple{
-    display: flex;
-    gap: 3rem;
-   
-}
+
 
 
 
@@ -276,26 +279,23 @@ padding-top: 2rem;
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
     justify-items: center;
-    padding: 3rem 10rem;
+    padding: 3rem 5rem;
 }
 .project{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     border-radius: 12px; 
     border: 3px solid gainsboro;
-    width: 380px;
+    width: 90%;
     height: auto;
     padding: 5px;
 }
-/* .project4{
-    grid-column: span 3;
-} */
+
 .projectImg{
-    width: 380px;
+    width: 100%;
     height: 250px;
 }
 .projectImg img{
-    object-fit: cover;
-    object-fit: fill;
+    object-fit: contain;
     border-radius: 12px;
     border: 3px solid gainsboro;
 }
@@ -318,15 +318,17 @@ padding-top: 2rem;
 .projectContent{
     margin: 2rem 1.5rem;
 }
-.projectContentp ,.projectContentpb{
+.projectContentp{
     margin-bottom: 1rem;
 }
 .projectLan{
-    margin: 0.8rem 1.5rem;
+    
+    padding: 20px;
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
-.lan ,.lanb{
+.lan{
     border: 1px solid;
     padding: 5px 15px;
     border-radius: 22px;
@@ -335,51 +337,40 @@ padding-top: 2rem;
     color: rgb(99, 99, 99);
     background-color: rgb(232, 232, 232);
 }
-.lanbottom{
-    margin: 0.1rem 1.5rem;
-    display: flex;
-    gap:1rem;
-}
+
+
+
+
 .projectBottom{
     grid-column: span 3;
     display: flex;
+    gap: 2rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     border-radius: 12px; 
     border: 3px solid gainsboro;
     padding: 5px;
-    height: 280px;
-    width: 100%;
-}
-.projectImgb{
-    width: 390px;
-    height: 280px;
-}
-.projectImgb img{
-    object-fit: cover;
-    object-fit: fill;
-    border-radius: 12px;
-    border: 3px solid gainsboro;
-}
-.projectbR{
-    padding: 20px;
-    margin-left: 1rem;
-}
-.projectContentb{
-    margin-top: 2rem;
+    height: 300px;
+    width: 98%;
 }
 .projectNameLinkb{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 1.5rem;
 }
-.gitIconb:hover{
-    transform: scale(1.1);
+.projectImgb{
+    width: 35%;
+    height: 100%;
 }
-.projectLanb{
-    display: flex;
-    margin-top: 2rem;
-    gap: 2rem;
+.projectImgb img{
+    object-fit: contain;
+    border-radius: 12px;
+    border: 3px solid gainsboro;
 }
+.projectbR{
+    margin: 0;
+}
+
 
 
 

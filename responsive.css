@@ -35,6 +35,31 @@
     .contactPage{
         gap: 3rem;
     }
+
+    
+    /* project */
+
+    .projectGrid{
+        grid-template-columns: repeat(2,1fr);
+        padding: 2.5rem 2.5rem;
+    }
+    .projectBottom{
+        grid-column: span 1;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    .projectImgb{
+        height: 250px;
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+    .projectbR {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
 }
 
 @media(max-width:768px){
@@ -87,7 +112,7 @@
         margin-left: 5%;
     }
     .card{
-        width: 650px;
+        width: 88%;
     }
     .aboutpara{
         width: 100%;
@@ -107,6 +132,30 @@
     }
     .contactForm{
         width: 70%;
+    }
+
+
+
+    /* project  */
+    .projectGrid{
+        grid-template-columns: 1fr;
+    }
+    .project{
+        width: 400px;
+    }
+    .projectBottom{
+        width: 400px;
+    }
+    
+}
+
+@media(max-width:480px){
+    .project{
+        width: 100%;
+    }
+    .projectBottom{
+
+        width: 100%;
     }
 }
 
@@ -150,7 +199,7 @@
         font-size: 2.6rem;
     }
     .card{
-        width: 355px;
+        /* width: 355px; */
         padding: 18px 15px;
     }
     .aboutpa{
@@ -172,29 +221,32 @@
     .contactDetails{
         height: 18rem;
     }
+    
 
+    /* project */
+
+    
 }
     @media(max-width:400px){
-        .card{
-            width: 325px;
-        }
+        
+         
+    }
+
+    @media(max-width:380px){
+       
     }
 
     @media(max-width:376px){
-        .card{
-            width:310px ;
-        }
+       
         .aboutpara{
         font-size: 0.8rem;
     }
-
+    
     
     }
 
     @media(max-width:361px){
-        .card{
-            width: 295px;
-        }
+        
         .homeRight{
             width: 300px;
             height: 350px;
@@ -210,7 +262,7 @@
             width: 75%;
         }
         .card{
-            width: 280px;
+           
             padding: 25px 5px;
         }
         .contactDetails h1{
