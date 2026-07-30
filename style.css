@@ -54,6 +54,7 @@ html {
 .burgerBtn{
     font-size: 1.2rem;
     display: none;
+    transition: .5s;
 }
 .projectBtn{
     border: 1px solid;

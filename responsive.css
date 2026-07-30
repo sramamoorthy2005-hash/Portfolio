@@ -90,6 +90,8 @@
     }
     .navLists.active{
         display: block;
+
+        
     }
     .homePage{
         flex-direction: column;

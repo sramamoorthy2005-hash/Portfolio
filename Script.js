@@ -1,7 +1,7 @@
 const burgerbutton =document.getElementById('burgerBtn');
 const navs = document.getElementById('navLists');
 const wrongBtn=document.getElementById('wrongBtn');
-const navLinks =document.querySelectorAll('.navList');
+const navLinks =document.querySelectorAll('.navList a');
 const pages =document.querySelectorAll('#home,#about,#skill,#project,#achivement,#contact');
 
 
@@ -30,4 +30,13 @@ window.addEventListener('scroll',()=>{
             navLink.classList.add('active');
         }
     });
+})
+
+navLinks.forEach(navLink=>{
+    navLink.addEventListener('click',()=>{
+        navs.classList.remove('active');
+        if(wrongBtn.classList.contains('fa-x')){
+            wrongBtn.classList.replace('fa-x','fa-bars')
+        }
+    })
 })
