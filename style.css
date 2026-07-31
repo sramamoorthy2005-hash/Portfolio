@@ -126,22 +126,25 @@ html {
 .resume:hover{
     background-color: rgb(250, 98, 98);
 }
-.socialLinks{
-    display: flex;
-    gap: 0.7rem;
-    font-size: 2.3rem;
-    color: rgb(66, 144, 246);
+.socialIcon {
+    text-decoration: none;
+    color: white;
+    font-size: 2.2rem;
+    transition: .3s;
+    display: inline-block;
 }
-.linkedIn:hover{
-    color: rgb(14, 14, 207);
-    /* background-color: white; */
-    
+.socialLinks .socialIcon{
+    color: rgb(56, 142, 254);
 }
-.gitHub:hover{
-    color: black;
-    /* background-color: white; */
+.gitHub:hover {
+    color: #333333 !important;
+    transform: translateY(-1px) scale(1.1);
 }
 
+.linkedIn:hover {
+    color: #5e32ff !important;
+    transform: translateY(-1px) scale(1.1);
+}
 
 
 
@@ -413,11 +416,10 @@ padding-top: 2rem;
     gap: 1rem;
     font-size: 2rem;
 }
-.whatsapp,.gitHub,.linkedIn{
-    transition: .5s;
-}
+
 .whatsapp:hover{
     color: rgb(6, 225, 115);
+    transform: translateY(-1px) scale(1.1);
 }
 .contactForm{
     background-color: #ffffff;
